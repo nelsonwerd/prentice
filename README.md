@@ -8,13 +8,13 @@ A case may recommend software, a process or handoff change, training, policy cla
 
 These files are Markdown instructions to an AI model — not an application or enforcement runtime. They can guide behavior; they cannot guarantee model adherence, diagnosis quality, safe code, security, deployment, or adoption.
 
-> **diagnose → confirmed workflow case → exact-revision build authorization → commission → user acceptance**
+> **diagnose → confirmed workflow case → exact-revision build authorization → commission → prototype / v1 + handoff → user acceptance**
 
 <p align="center">
-  <img src="assets/prentice-pipeline.svg" alt="The Prentice workflow: diagnose creates a confirmed evidence-linked TOOL_BRIEF. If one exact revision is authorized with an authority holder, cost cap, and build owner, commission autonomously orchestrates harden, sequence, make, and snag, then writes FIRE_IT_UP.md. Without authorization, the case stops, enters evaluation, or is handed off." width="760">
+  <img src="assets/prentice-pipeline.svg" alt="The Prentice workflow: diagnose creates a confirmed evidence-linked TOOL_BRIEF. If one exact revision is authorized with an authority holder, cost cap, and build owner, commission autonomously orchestrates harden, sequence, make, and snag. It hands back both a prototype or version one of the proposed build and FIRE_IT_UP.md, the start-up, review, and wiring handoff. Without authorization, the case stops, enters evaluation, or is handed off." width="760">
 </p>
 
-`commission` is the autonomous construction orchestrator, not a fifth build phase beneath the others. It wraps `harden`, `sequence`, `make`, and `snag`, carries their artifacts forward, and writes the final handback. `diagnose` remains the highest-priority product hypothesis to validate because its workflow case may be useful even when no software should be built; that validation priority does not make it the build orchestrator.
+`commission` is the autonomous construction orchestrator, not a fifth build phase beneath the others. It wraps `harden`, `sequence`, `make`, and `snag`, carries their artifacts forward, and hands back both the proposed prototype/V1 and `FIRE_IT_UP.md` — the start-up, review, and wiring document. `diagnose` remains the highest-priority product hypothesis to validate because its workflow case may be useful even when no software should be built; that validation priority does not make it the build orchestrator.
 
 ## Who it is for
 
