@@ -8,7 +8,13 @@ A case may recommend software, a process or handoff change, training, policy cla
 
 These files are Markdown instructions to an AI model — not an application or enforcement runtime. They can guide behavior; they cannot guarantee model adherence, diagnosis quality, safe code, security, deployment, or adoption.
 
-> **diagnose → confirmed workflow case → optional evaluation/authorization → build or handoff → user acceptance**
+> **diagnose → confirmed workflow case → exact-revision build authorization → commission → user acceptance**
+
+<p align="center">
+  <img src="assets/prentice-pipeline.svg" alt="The Prentice workflow: diagnose creates a confirmed evidence-linked TOOL_BRIEF. If one exact revision is authorized with an authority holder, cost cap, and build owner, commission autonomously orchestrates harden, sequence, make, and snag, then writes FIRE_IT_UP.md. Without authorization, the case stops, enters evaluation, or is handed off." width="760">
+</p>
+
+`commission` is the autonomous construction orchestrator, not a fifth build phase beneath the others. It wraps `harden`, `sequence`, `make`, and `snag`, carries their artifacts forward, and writes the final handback. `diagnose` remains the highest-priority product hypothesis to validate because its workflow case may be useful even when no software should be built; that validation priority does not make it the build orchestrator.
 
 ## Who it is for
 
@@ -24,14 +30,16 @@ Confirmation is not selection. Selection is not permission to build. None of the
 
 ## The skills
 
-| Skill | Role |
-|---|---|
-| **`diagnose`** | Core hypothesis: produces an evidence-linked workflow case the participant can confirm; normally stops there |
-| **`harden`** | Optionally stress-tests a confirmed revision selected for evaluation or authorized for construction |
-| **`sequence`** | Plans construction from one exact authorized revision |
-| **`make`** | Executes authorized units and records the checks performed; does not independently assure correctness |
-| **`snag`** | Runs a bounded post-build defect pass and preserves the remaining technical tail |
-| **`commission`** | Orchestrates the optional build chain from an exact authorized revision with a named build owner |
+| Layer | Skill | Role |
+|---|---|---|
+| **Discovery** | **`diagnose`** | Core hypothesis: produces an evidence-linked workflow case the participant can confirm; normally stops there |
+| **Autonomous construction** | **`commission`** | Takes one exact authorized revision and orchestrates the optional build chain end to end |
+| **Invoked by `commission`** | **`harden`** | Optionally stress-tests the authorized design without reopening its worth |
+| **Invoked by `commission`** | **`sequence`** | Plans construction from the exact authorized revision |
+| **Invoked by `commission`** | **`make`** | Executes authorized units and records the checks performed; does not independently assure correctness |
+| **Invoked by `commission`** | **`snag`** | Runs a bounded post-build defect pass and preserves the remaining technical tail |
+
+Run a build phase directly when you want to control that phase by hand. Invoke `commission` when the exact brief revision has been authorized and you want the suite to fly the construction chain autonomously.
 
 ## Current evidence
 
@@ -49,7 +57,7 @@ Department synthesis is **not implemented**. A possible future manual experiment
 
 ## Quick start
 
-This repository is currently **private**. These commands require an authenticated GitHub account with explicit access.
+This is the public, sanitized release repository. Real cases, briefs, evidence, fixtures, and generated tools belong in their separately cleared workspaces, not in this source tree.
 
 ```bash
 git clone https://github.com/nelsonwerd/prentice.git
