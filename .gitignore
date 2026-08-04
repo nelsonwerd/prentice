@@ -1,0 +1,16 @@
+# Local research / evidence notes — keep local, never publish
+research/
+
+# didrun ledgers are secret-bearing — never commit
+.didrun/
+
+# macOS
+.DS_Store
+
+# Local Claude Code state (launch configs, etc.) — keep local, never publish
+.claude/
+
+# Real user artifacts collected during a diagnose session — NEVER commit.
+# These are someone's actual work product and often their client's data.
+artifacts/
+TOOL_BRIEF.md

@@ -1,0 +1,9 @@
+{
+  "name": "prentice",
+  "description": "Experimental Agent Skills for turning workflow friction into an evidence-linked, confirmed workflow case. Diagnose is the core; evaluation and AI-assisted construction are optional, separately authorized handoffs. For operators helping people who are not builders.",
+  "author": { "name": "Drew Nelson" },
+  "homepage": "https://github.com/nelsonwerd/prentice",
+  "repository": "https://github.com/nelsonwerd/prentice",
+  "license": "MIT",
+  "keywords": ["automation", "workflow", "diagnosis", "non-technical", "personal-tools", "skills", "ai-enablement"]
+}

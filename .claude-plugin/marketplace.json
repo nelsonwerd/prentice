@@ -1,0 +1,12 @@
+{
+  "name": "nelsonwerd-prentice",
+  "description": "Experimental Agent Skills for evidence-linked workflow diagnosis, with optional governed construction.",
+  "owner": { "name": "Drew Nelson" },
+  "plugins": [
+    {
+      "name": "prentice",
+      "source": "./",
+      "description": "Maps a real workflow into a confirmed, source-linked case; evaluation and AI-assisted construction are optional, separately authorized handoffs."
+    }
+  ]
+}
